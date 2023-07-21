@@ -1,0 +1,97 @@
+ADDITTION :
+ 
+for (i = 0; i < r; ++i)
+    for (j = 0; j < c; ++j) {
+      sum[i][j] = a[i][j] + b[i][j];
+    }
+  printf("\nSum of two matrices: \n");
+  for (i = 0; i < r; ++i)
+    for (j = 0; j < c; ++j) {
+      printf("%d ", sum[i][j]);
+      }
+        printf("\n");
+    }
+
+SUBTRACTION:
+
+    for (i = 0; i < r; ++i)
+    for (j = 0; j < c; ++j) {
+      sub[i][j] = a[i][j] - b[i][j];
+    }
+
+  printf("\nSub of two matrices: \n");
+  for (i = 0; i < r; ++i)
+    for (j = 0; j < c; ++j) {
+      printf("%d ", sub[i][j]);
+      }
+        printf("\n");
+    }
+MULTIPLICATION:
+
+  for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+           res[i][j]=0;
+            for(k=0;k<c;k++)
+            {
+              res[i][j]+=aq1[i][k]*aq2[k][j];
+            }
+
+        }
+    }
+    printf("The Multiplication Of Two Array Is :\n");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            printf("\t%d",res[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+DIVISION:
+
+  for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+           res[i][j]=0;
+            for(k=0;k<c;k++)
+            {
+              res[i][j]+=aq1[i][k]/aq2[k][j];
+            }
+
+        }
+    }
+    printf("The Multiplication Of Two Array Is :\n");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            printf("\t%d",res[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+
+INSERTION:
+
+  for(int i=0;i<5;i++)
+    {
+        b[i]=a[i];
+    }
+    for(int i=5;i>=position;i--)
+    {
+        b[i+1]=b[i];
+    }
+    b[position]=element;
+
+DELETION:
+
+ for(i=position;i<4;i++)
+    {
+        a[i]=a[i+1];
+    }

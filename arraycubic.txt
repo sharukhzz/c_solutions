@@ -1,0 +1,96 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+   int A[9][9]={1,2,3,4,5,6,7,8,9,
+                2,3,4,5,6,7,8,9,1,
+                3,4,5,6,7,8,9,1,2,
+                4,5,6,7,8,9,1,2,3,
+                5,6,7,8,9,1,2,3,4,
+                6,7,8,9,1,2,3,4,5,
+                7,8,9,1,2,3,4,5,6,
+                8,9,1,2,3,4,5,6,7,
+                9,1,2,3,4,5,6,7,8};
+int count=0,count1=0,count2=0,count3=0,count4=0;
+    int rowcheck()
+    {
+   for(int i=0;i<9;i++)
+   {
+       for(int j=0;j<9;j++)
+       {
+           if(A[i][j]==A[i][j+1])
+           {
+           count++;
+           }
+       }
+   }
+    if(count!=0)
+           {
+               printf("the values are repeated in rows");
+           }
+}
+int coloumncheck()
+{
+    for(int j=0;j<9;j++)
+   {
+       for(int i=0;i<9;i++)
+       {
+           if(A[j][i]==A[j][i+1])
+           {
+           count1++;
+           }
+       }
+   }
+   if(count1!=0)
+           {
+               printf("the values are repeated in coloumn");
+           }
+   
+}
+int cubiccheck()
+{
+    for(int x=0;x<9;x+=3)
+    {
+        for(int y=0;y<9;y+=3)
+        {
+           {
+                for(int i=0;i<3;i++)
+                 {
+                    for(int j=0;j<3;j++)
+                        {
+                             if(A[i][j]==A[i][j+1])
+                                {
+                                    count2++;
+                                 }
+                        }
+                }
+                    for(int j=0;j<3;j++)
+                    {
+                         for(int i=0;i<3;i++)
+                         {
+                               if(A[j][i]==A[j][i+1])
+                             {
+                                 count3++;
+                             }
+                         }
+                    }
+                    count4++;
+                    printf("\n %d cube solved",count4);
+            if(count2!=0)
+           {
+               printf("the values are repeated in rows");
+           }
+            if(count3!=0)
+           {
+               printf("the values are repeated in coloumn");
+           }
+        }
+    }
+}
+}  
+rowcheck();
+coloumncheck();
+cubiccheck();
+}
+ 
