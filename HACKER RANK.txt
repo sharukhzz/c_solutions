@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char C;
+    char a[]="Language";
+    scanf("%c",&C);
+    printf("%c",C);
+    printf("\n%s",a);
+}
+   
