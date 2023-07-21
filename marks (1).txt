@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+
+    int n,a,b,c,i,mod;
+    printf("\nNO OF TEST CASE");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("\nENTER NO OF QUESTIONS:");
+        scanf("%d",&a);
+        printf("\nENTER MARK SCORED:");
+        scanf("%d",&b);
+        printf("\nENTER TARGET MARKS:");
+        scanf("%d",&c);
+mod=c%b;
+if(mod==0)
+{
+    printf("\nyes");
+}
+else if(c=0)
+{
+        printf("\nyes");
+
+}
+else
+{
+
+    printf("\nNO");
+}
+
+    }
+}
